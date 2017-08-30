@@ -1,0 +1,87 @@
+Last login: Tue Aug 29 15:11:06 on console
+iMac-de-CCDM18:~ ccdm18$ git init
+Initialized empty Git repository in /Users/ccdm18/.git/
+iMac-de-CCDM18:~ ccdm18$ pwd
+/Users/ccdm18
+iMac-de-CCDM18:~ ccdm18$ cd Desktop
+iMac-de-CCDM18:Desktop ccdm18$ cd pw
+iMac-de-CCDM18:pw ccdm18$ git in
+git: 'in' is not a git command. See 'git --help'.
+
+The most similar commands are
+	init
+	svn
+iMac-de-CCDM18:pw ccdm18$ git init
+Initialized empty Git repository in /Users/ccdm18/Desktop/pw/.git/
+iMac-de-CCDM18:pw ccdm18$ ls -la
+total 0
+drwxr-xr-x   3 ccdm18  staff  102 Aug 29 15:20 .
+drwx------+  6 ccdm18  staff  204 Aug 29 12:37 ..
+drwxr-xr-x  10 ccdm18  staff  340 Aug 29 15:20 .git
+iMac-de-CCDM18:pw ccdm18$ git config user.name aaronpweb2017
+iMac-de-CCDM18:pw ccdm18$ git config user.name aaronpweb2017@hotmail.com
+iMac-de-CCDM18:pw ccdm18$ git config user.email luis-aaron40@hotmail.com
+iMac-de-CCDM18:pw ccdm18$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	proyecto.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+iMac-de-CCDM18:pw ccdm18$ git add -A
+iMac-de-CCDM18:pw ccdm18$ git commit -m "Commit inicial"
+[master (root-commit) 1e3b792] Commit inicial
+ 1 file changed, 1 insertion(+)
+ create mode 100644 proyecto.txt
+iMac-de-CCDM18:pw ccdm18$ git status
+On branch master
+nothing to commit, working tree clean
+iMac-de-CCDM18:pw ccdm18$ clear
+
+iMac-de-CCDM18:pw ccdm18$ git log
+commit 1e3b792072b3bf1a77486a83a36cacc08ecaa891 (HEAD -> master)
+Author: aaronpweb2017@hotmail.com <luis-aaron40@hotmail.com>
+Date:   Tue Aug 29 15:32:46 2017 -0600
+
+    Commit inicial
+iMac-de-CCDM18:pw ccdm18$ git status
+On branch master
+nothing to commit, working tree clean
+iMac-de-CCDM18:pw ccdm18$ git status
+On branch master
+nothing to commit, working tree clean
+iMac-de-CCDM18:pw ccdm18$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   proyecto.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+iMac-de-CCDM18:pw ccdm18$ git commitm "una segunda linea"
+git: 'commitm' is not a git command. See 'git --help'.
+
+The most similar command is
+	commit
+iMac-de-CCDM18:pw ccdm18$ git ---help
+Unknown option: ---help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+iMac-de-CCDM18:pw ccdm18$ git commit -m "una seg. linea"
+On branch master
+Changes not staged for commit:
+	modified:   proyecto.txt
+
+no changes added to commit
+iMac-de-CCDM18:pw ccdm18$ git log
+commit 1e3b792072b3bf1a77486a83a36cacc08ecaa891 (HEAD -> master)
+Author: aaronpweb2017@hotmail.com <luis-aaron40@hotmail.com>
+Date:   Tue Aug 29 15:32:46 2017 -0600
