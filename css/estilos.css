@@ -1,0 +1,19 @@
+body{
+	/*Estructura básica del body en css:*/
+	/*atributo: valopr;*/
+	/*borde de la pagina*/
+	border: 1px solid red;
+	/*with --> ancho de la pantalla*/
+	width: 1024px;
+
+
+
+
+}
+header{
+	text-align: center;
+}
+header img{
+	float: right;
+	width: 90px;
+}
