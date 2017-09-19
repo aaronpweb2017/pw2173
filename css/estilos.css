@@ -17,3 +17,17 @@ header img{
 	float: right;
 	width: 90px;
 }
+/*Se van a afectar todos ls li que estan en los ul los cuales estan en header.*/
+header nav ul li{
+	/*background --> color del fondo de la caja.*/
+	background: blue;
+	color: white;
+	/*border-radius --> redondea las esquinas de las cajas.*/
+	border-radius: 5px; 
+	/*margin --> margen que separa una caja de la otra (espacion entre dos cajas).*/
+	/*padding --> margen interno de una caja determinada. Es del borde interno hacia adentro.*/  
+	/*Parámetrosd del margin y el padding: arriba (A), derecha (D), abajo(Ab) y izquierda(I).*/
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+	padding: 5px 8px 5px 8px;
+}
