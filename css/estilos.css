@@ -3,27 +3,39 @@ body{
 	/*atributo: valopr;*/
 	/*borde de la pagina*/
 	border: 1px solid red;
+	/*con auto le da la misma proporción tanto de la derecha como en la izquierda (se centra la caja)*/
+	/*0 para verticales y auto para horizontales:*/
+	margin: 0 auto;
 	/*with --> ancho de la pantalla*/
 	width: 1024px;
-
-
-
-
+	background: blue;
+	color: white; 
 }
 header{
 	text-align: center;
+	border: 1px solid blue;
 }
 header img{
 	float: right;
+	margin-right: 15px;
+	margin-top: -60px;
 	width: 90px;
+
 }
 /*Se van a afectar todos ls li que estan en los ul los cuales estan en header.*/
+header nav{
+	/*Estamos bajando la caja del nav el cual pertenece a header:*/
+	margin-top: 60px;
+}
 header nav ul li{
 	/*background --> color del fondo de la caja.*/
 	background: blue;
 	color: white;
 	/*border-radius --> redondea las esquinas de las cajas.*/
 	border-radius: 5px; 
+	/*box-shadow: para ponerle sombras a los botones: hacia la derecha (3px), hacia abajo (3px) y color (black)*/
+	box-shadow: 3px 3px black;
+	/*box-shadow: 3px 3px rgba(0,0,0,0.2);*/
 	/*margin --> margen que separa una caja de la otra (espacion entre dos cajas).*/
 	/*padding --> margen interno de una caja determinada. Es del borde interno hacia adentro.*/  
 	/*Parámetrosd del margin y el padding: arriba (A), derecha (D), abajo(Ab) y izquierda(I).*/
@@ -31,4 +43,22 @@ header nav ul li{
 	margin: 0px 10px 0px 0px;
 	padding: 5px 8px 5px 8px;
 	/*Esta es una línea de prueba para hacer un commit desde otra computadora*/
+	/*Se define el ancho de los botones:*/
+	width: 80px;
+	
+}
+/*evento: codigo que se dispara enb base a una acción*/
+/*hover: evento que se dispara cuado se pasa el mouse sobre uun componente*/
+header nav ul li:hover{
+	background: red;
+	color: black; /*color de la letra*/
+}
+/*Se desea poner los 3 articulos un lado del otro sin usar tablas (uno a la izquierda, uno en el centro y otro a la derecha).*/
+section article{
+	border: 1px solid tomato;
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	
+
 }
