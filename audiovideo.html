@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Etiquetas audio y video</title>
+</head>
+<body>
+	<!-- Etiquetas para audio y video: -->
+	<audio controls>
+		<source src="media/audio/musica.mp3" />
+	</audio>
+	<video controls autoplay preload="auto" loop poster="img/estrella.png">
+	<!-- 	loop: se reinicia el video automaticamente.
+	poster: es una imagen que se ponbe cuando no se puede reproducir un video.
+	Si hay varios videos en una misma etiqueta de video se reproduce el primer video (de arriba hacia abajo)compatible con el navegador y los demás los ignora (si ninguno es compatible marca error). -->
+		<source src="media/video/html5.mp4" />
+		<source src="media/video/html5.webm" />
+	</video>
+</body>
+</html>
