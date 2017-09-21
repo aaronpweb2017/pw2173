@@ -7,9 +7,13 @@ body{
 	/*0 para verticales y auto para horizontales:*/
 	margin: 0 auto;
 	/*with --> ancho de la pantalla*/
-	width: 1024px;
+	width: 1024px; 
+}
+footer{
 	background: blue;
-	color: white; 
+	color: white;
+	margin-top 10px;
+	text text-align: center;
 }
 header{
 	text-align: center;
@@ -33,7 +37,12 @@ header nav ul li{
 	color: white;
 	/*border-radius --> redondea las esquinas de las cajas.*/
 	border-radius: 5px; 
-	/*box-shadow: para ponerle sombras a los botones: hacia la derecha (3px), hacia abajo (3px) y color (black)*/
+	/*box-shadow: para ponerle sombras a los botones: , y 
+	parámetros de box-shadow:
+	1.- hacia la derecha (+) e izquierda (-)
+	2.- hacia arriba (+) o abajo (-) 
+	3.- color: color en ingles (black), RGB, RGB4, #Hexa
+	*/
 	box-shadow: 3px 3px black;
 	/*box-shadow: 3px 3px rgba(0,0,0,0.2);*/
 	/*margin --> margen que separa una caja de la otra (espacion entre dos cajas).*/
@@ -48,7 +57,7 @@ header nav ul li{
 	
 }
 /*evento: codigo que se dispara enb base a una acción*/
-/*hover: evento que se dispara cuado se pasa el mouse sobre uun componente*/
+/*hover: evento que se dispara cuado se pasa el mouse sobre un componente*/
 header nav ul li:hover{
 	background: red;
 	color: black; /*color de la letra*/
@@ -59,6 +68,4 @@ section article{
 	display: inline-block;
 	vertical-align: top;
 	width: 32%;
-	
-
 }
