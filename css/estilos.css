@@ -1,4 +1,4 @@
-body{
+﻿body{
 	/*Estructura básica del body en css:*/
 	/*atributo: valopr;*/
 	/*borde de la pagina*/
@@ -42,7 +42,7 @@ header nav ul li{
 	display: inline-block;
 	margin: 0px 10px 0px 0px;
 	padding: 5px 8px 5px 8px;
-	/*Esta es una línea de prueba para hacer un commit desde otra computadora*/
+	/*Esta es otra línea de prueba para hacer un commit desde otra computadora*/
 	/*Se define el ancho de los botones:*/
 	width: 80px;
 	
