@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+			<title> 
+				Etiquetas de audio y vídeo (HTML 5).
+			</title>
+	</head>
+	<body>
+		<!-- Etiquetas para audio y video... -->
+		<audio controls>
+			<source src="media/audio/musica.mp3" type="">
+		</audio>
+		<video controls autoplay perload="auto" loop poster="media/img/estrella.png">
+			<!-- loop: se reinicia el video automáticamente.
+			poster: es una imagen que se pone cuando no se puede reproducir un video por alguna razón (de arriba hacia abajo) compatible con el navegador y los demás los ignora (si ninguno es compatible con el navegador entonces marcará error) -->
+			<source src="media/video/html5.mp4" type="">
+			<source src="media/video/html5.webm" type="">
+		</video>
+	</body>
+</html>
