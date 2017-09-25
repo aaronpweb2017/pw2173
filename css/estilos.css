@@ -33,7 +33,11 @@ header nav ul li{
 	color: white;
 	/*border-radius --> redondea las esquinas de las cajas.*/
 	border-radius: 5px; 
-	/*box-shadow: para ponerle sombras a los botones: hacia la derecha (3px), hacia abajo (3px) y color (black)*/
+	/*box-shadow: para ponerle sombras a los botones: 
+	parámetros de box-shadow:
+	1.- hacia la derecha (+) o la izquierda (-).
+	2.- hacia arriba (+) o hacia abajo (-).
+	3.- Color en inglés, RGB, RGB4, #HEXA*/
 	box-shadow: 3px 3px black;
 	/*box-shadow: 3px 3px rgba(0,0,0,0.2);*/
 	/*margin --> margen que separa una caja de la otra (espacion entre dos cajas).*/
