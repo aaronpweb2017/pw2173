@@ -1,26 +1,21 @@
-body
-{
+body{
 	font-size: 16px; /*1em*/
 	margin: 0 auto; /*centramos body, 0 para quitar margenes de arriba y auto  de derecha a izquierda se ajuste solo*/
 	max-width: 1078px; /*empresa-cliente*/
 	min-width: 1078px;
-
 }
 header nav{
-	/*border: 1px solid red;
-	 */
+	/*border: 1px solid red;*/
+	/*text-align: center; no funciona por la mancha de pintura*/
 	 margin-left: 220px;
-
-
 }
 header nav ul li{
-	border-bottom: 1px solid gray; /*pone el borde a la caja*/
+	border-bottom: 1px solid gray; /*le pone el borde a la caja*/
 	color: gray;
 	display: inline-block;
 	font-size: 1.8em;
 	margin-right: 15px;
 	/*text-decoration: underline;*/
-
 }
 header input{
 	float: right;
@@ -28,11 +23,11 @@ header input{
 	margin-top: 15px;
 	position: relative;
 }
-#bgoffer{/*para mover el logo hacia arriba y ala izquierda*/
+#bgoffer{/*para mover el logo hacia arriba y a la izquierda...*/
 	/*margin-top: -500px;*/
+	left: -35px;
 	position: relative;
 	top: -410px;
-	left: -35px;
 }
 #granthams{
 	margin-top: 20px;
@@ -40,7 +35,7 @@ header input{
 }
 #paint{
 	/*display: none;*/
-  float: right;
+ 	float: right;
 
 }
 #primerseccion{
@@ -53,8 +48,8 @@ header input{
 }
 #secc01art01{
 	margin-left: 30px;
-	width: 60px;
+	width: 60%;
 }
 #secc01art02{
-	width: 30px;
+	width: 30%;
 }
