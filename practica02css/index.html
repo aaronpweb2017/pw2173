@@ -1,91 +1,130 @@
-<!DOCTYPE html>
-<html lang="es">
-	<head>
-		<meta charset="UTF-8">
-		<title>
-			Práctica 02 CSS3
-		</title>
-		<link rel="stylesheet" href="css/estilos.css">
-	</head>
-	<body>
-		<header>
-			<img src="img/banner.png" alt="">
-			<img src="img/granthams.png" id="granthams" alt="">
-			<img src="img/paint.png" id="paint" alt="">
-			<input type="search" placeholder="search">
-			<nav>
-				<ul>
-					<li>Print</li>
-					<li>Copy</li>
-					<li>Finishing</li>
-					<li>Design</li>
-					<li>Exhibition</li>
-				</ul>
-			</nav>
-		</header>
-		<!-- section#primerseccion>article*2 para poner id-->
-		<section id="primerseccion">
-			<article id="secc01art01">
-				<img src="img/slide.jpg" alt="">
-			</article>
-			<article id="secc01art02">
-				<!-- cada palabra representa una clase: -->
-				<span class="colorrosa grande nito">We can offer...</span>
-				<ul>
-					<li>Highly Competitive Prices</li>
-					<li>Variable Data</li>
-					<li>Fast Turnaraund</li>
-					<li>Rapid Re-order Service</li>
-					<li>Wide Product Range</li>
-					<li>Low Cost Delivery</li>
-					<li>Monthly Offers</li>
-					<li>Great Customer Service</li>
-				</ul>
-			</article>
+<!DOCTYPE html> <!-- indica que el tipo de documento es HTML5. -->
+<!-- inicio del cuerpo de HTML: -->
+<html lang="es"> <!-- lang: establece el lenguaje de la página... es: spanish. -->
+	<!-- la parte principal del esqueleto HTML (head). -->
+	<head> 
+		<meta charset="UTF-8"> <!-- UTF-8: para incluir caracteres y símbolos especiales. -->
+		<!-- se le asigna el título (title) a la pestaña de navegación. -->
+		<title> 
+			Práctica 02 CSS3.
+		</title> <!-- fin del title. -->
+		<link rel="stylesheet" href="css/estilos.css"> <!-- conexión (href) con la hoja de estilo (stylesheet) de CSS3 -->
+	</head> <!-- fin del head. -->
+	<!-- inicio del body. -->
+	<body> <!-- donde va todo el contenido de la página... -->
+		<!-- inicio del header. -->
+		<header> <!-- parte principal del body. -->
+			<img src="img/banner.png" alt=""> <!-- se inserta una imagen llamada banner.png. sin id. -->
+			<img src="img/granthams.png" id="granthams" alt=""> <!-- se inserta la 2da imagen cuyo id es granthams. -->
+			<img src="img/paint.png" id="paint" alt=""> <!-- se inserta la 3ra imagen cuyo id es paint -->
+			<input type="search" placeholder="search"> <!-- input de tipo search con la palabra search (búsqueda) -->
+			<!-- inicio del nav. -->
+			<nav> <!-- nav: para definir un menú (en este caso lista) de navegación. -->
+				<ul> <!-- lista desordenada (ul) del nav. -->
+					<li>Print</li> <!-- lista 1 (Print) del ul del nav. -->
+					<li>Copy</li> <!-- lista 2 (Copy) del ul del nav. -->
+					<li>Finishing</li> <!-- ... -->
+					<li>Design</li> <!-- ... -->
+					<li>Exhibition</li> <!-- lista 5 (Exhibition) del ul del nav. -->
+				</ul> <!-- fin del ul. -->
+			</nav> <!-- fin del nav. -->
+		</header> <!-- fin del header. -->
+		<!-- sección 1 (con id=primerseccion).  -->
+		<section id="primerseccion"> 
+			<!-- artículo 1 (con id=secc01art01) de la sección 1. -->
+			<article id="secc01art01"> 
+				<img src="img/slide.jpg" alt=""> <!-- imagen del artículo 1 de la sección 1. -->
+			</article> <!-- fin del artículo 1 de la sección 1. -->
+			<!-- artículo 2 (con id=secc01art02) de la sección 1. -->
+			<article id="secc01art02"> 
+				<!--span class=" A B C ... N" donde cada letra es una clase (se pueden tener n calses).: -->
+				<!-- span: Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en línea. -->
+				<!-- span del artículo 2 de la sección 1, con clases: colorrosa, grande y nito. -->
+				<span class="colorrosa grande nito"> <!-- nito: clase pare definir el texto en negritas. -->
+					We can offer...
+				</span> <!-- fin del span del artículo 2 de la sección 1. -->
+				<!-- lista desordenada (ul) del artículo 2 de la sección 1. -->
+				<ul> 
+					<li>Highly Competitive Prices</li> <!-- lista 1 del ul del artículo 2 de la sección 1. -->
+					<li>Variable Data</li> <!-- lista 2 del ul del artículo 2 de la sección 1. -->
+					<li>Fast Turnaraund</li> <!-- lista 3 del ul del artículo 2 de la sección 1. -->
+					<li>Rapid Re-order Service</li> <!-- ... --> <!-- ... -->
+					<li>Wide Product Range</li> <!-- ... -->
+					<li>Low Cost Delivery</li> <!-- ... -->
+					<li>Monthly Offers</li> <!-- ... -->
+					<li>Great Customer Service</li> <!-- lista 8 del ul del artículo 2 de la sección 1. -->
+				</ul> <!-- fin del ul. -->
+			</article> <!-- fin del artículo 2 de la sección 1. -->
+			<!-- imagen 1 de la sección 1. -->
 			<img src="img/bg_offer.png" id="bgoffer" alt="">
-		</section>
-		<!-- section#segundaseccion>article>span -->
+		</section>  <!-- fin de la sección 1. -->
+		<!-- sección 2 (con id=segundaseccion).  -->
 		<section id="segundaseccion">
-			<article>
-				<span class="colorrosa rosamediano nito">01772 250207</span>
-			</article>
-		</section>
-		<!-- secction#terceraseccion>article*4 -->
+			<!-- artículo de la sección 2. -->
+			<article> 
+				<!-- span del artículo de la sección 2, con clases: colorrosa, rosamediano y nito. -->
+				<span class="colorrosa rosamediano nito">
+					01772 250207...
+				</span>
+			</article> <!-- fin del artículo de la sección 2. -->
+		</section> <!-- fin de la sección 2. -->
+		<!-- sección 3 (con id=terceraseccion).  -->
 		<secction id="terceraseccion">
+			<!-- artículo 1 de la sección 3. -->
 			<article>
-				<img src="img/cerdito.png" alt="">
-				<span class="colorrosa comuntitulo nito">Save this Spring</span>
-				<br>
+				<img src="img/cerdito.png" alt=""> <!-- imagen del artículo 1 de la sección 3. -->
+				<!-- span 1 del artículo 1 de la sección 3, con clases: colorrosa, comuntitulo y nito. -->
+				<!-- comuntitulo: lo que tienen en común el título de los artículos de la sección. -->
+				<span class="colorrosa comuntitulo nito">
+					Save this Spring
+				</span><br> <!-- br: para salto de líena. -->
 				Fabulous discounts on canvas's and roll up's as
-				well as many offers. <p>
-				<span class="colorrosa nito">Find out more...</span>
-			</article>
+				well as many offers. <p> <!--p:  define un párrafo. -->
+				<!-- span 2 del artículo 1 de la sección 3, con clases: colorrosa y nito. -->
+				<span class="colorrosa nito">
+					Find out more...
+				</span>
+			</article> <!-- fin del artículo 1 de la sección 3. -->
+			<!-- artículo 2 de la sección 3. -->
 			<article>
-				<img src="img/hoja.png" alt="">
-				<span class="colorverde comuntitulo nito">ECO Friendly</span>
-				<br>
+				<img src="img/hoja.png" alt=""> <!-- imagen del artículo 2 de la sección 3. -->
+				<!-- span del artículo 2 de la sección 3, con clases: colorverde, comuntitulo y nito. -->
+				<span class="colorverde comuntitulo nito">
+					ECO Friendly
+				</span><br>
 				ECO Friendly Materials user in our production
 				process. <br>
 				Recycled papers and paper from Sustainable Forest (
 				including FSC papers) are available across our range of Printing Services.
-			</article>
+			</article> <!-- fin del artículo 2 de la sección 3. -->
+			<!-- artículo 3 de la sección 3. -->
 			<article>
-				<img src="img/new.png" alt="">
-				<span class="colorazul comuntitulo nito">Upload your file</span>
-				<br>
+				<img src="img/new.png" alt=""> <!-- imagen del artículo 3 de la sección 3. -->
+				<!-- span 1 del artículo 3 de la sección 3, con clases: colorazul, comuntitulo y nito. -->
+				<span class="colorazul comuntitulo nito">
+					Upload your file
+				</span><br>
 				Making it easy to order your printing today. our upload
 				facility enables you send your files directly to us. Use the notes section to
-				inform us of your order, then sit back and wait for a member of our team contact you.
-				<p>
-				<span class="colorazul nito">Upload Your File Now...</span>
-			</article>
+				inform us of your order, then sit back and wait for a member of our team contact you.<p>
+				<!-- span 2 del artículo 3 de la sección 3, con clases: colorazul y nito. -->
+				<span class="colorazul nito">
+					Upload Your File Now...
+				</span>
+			</article> <!-- fin del artículo 3 de la sección 3. -->
+			<!-- artículo 4 de la sección 3. -->
 			<article>
-				<span class="colorrosa distintotitulo">Stay in touch</span>
-				<br>
+				<!-- span del artículo 4 de la sección 3, con clases: colorrosa y distintotitulo. -->
+				<!-- distintotitulo: lo que tiene diferente el título del artículo actual a los otros. -->
+				<span class="colorrosa distintotitulo">
+					Stay in touch
+				</span><br>
 				join our mailing list today <br>
+				<!-- cuadro de texto para escribir un dato (email). -->
 				<input type="email" placeholder="Email goes here"> 
+				<!-- botón de enviar. -->
 				<input type="button" value="send">
-			</article>
-		</secction>
-	</body>
-</html>
+			</article> <!-- fin del artículo 4 de la sección 3. -->
+		</secction> <!-- fin de la sección 3. -->
+	</body> <!-- fin del body.-->
+</html> <!-- fin del cuerpo de HTML.-->
