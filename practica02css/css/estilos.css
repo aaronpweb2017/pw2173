@@ -79,11 +79,18 @@ header input{
 #terceraseccion article img{
 	vertical-align: middle;
 }
+#secc03art04{
+	text-align: center;
+	padding-top: 65px;
+}
+#secc04art01, #secc04art02{
+	color: white;
+	text-align: center;
+}
 .colorrosa{ /*coloor del texto: imgr.co: pagina para colores;*/
 	/*todos los elementos que estan contenidos en esta clase se buelven rosas.*/
 	/*color: #F4A3C6;*/
 	color: #FF0099;
-
 }
 .comuntitulo{
 	font-size: 1.2em;
@@ -102,4 +109,32 @@ header input{
 }
 .colorazul{
 	color: blue;
+}
+.colorazulbajo{
+ 	color: #88D4F2;
+}
+#terceraseccion article input[type="button"]{
+	border-radius: 5px;
+	background: #A5D348;
+	color: white;
+	font-weight: bold;
+}
+#terceraseccion article input[type="email"]{
+	border-radius: 5px;
+	height: 18px;
+}
+#cuartaseccion{
+	display: inline-block;
+	vertical-align: top; /*para subir los articles.*/
+	width: 33%;
+}
+#cuartaseccion article{
+	background-color: blue;
+}
+#feelingsocial{
+	height: : 85px;
+	width: 165px;
+}
+#monos{
+	margin-top: 40px;
 }
