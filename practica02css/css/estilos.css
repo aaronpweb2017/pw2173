@@ -4,10 +4,15 @@ body{
 	max-width: 1078px; /*empresa-cliente*/
 	min-width: 1078px;
 }
+header{
+	background: none;
+
+}
 header nav{
 	/*border: 1px solid red;*/
 	/*text-align: center; no funciona por la mancha de pintura*/
 	 margin-left: 220px;
+	 
 }
 header nav ul li{
 	border-bottom: 1px solid gray; /*le pone el borde a la caja*/
@@ -39,7 +44,6 @@ header input{
 #paint{
 	/*display: none;*/
  	float: right;
-
 }
 #primerseccion{
 	height: 318px;
@@ -124,17 +128,42 @@ header input{
 	height: 18px;
 }
 #cuartaseccion{
-	display: inline-block;
-	vertical-align: top; /*para subir los articles.*/
-	width: 33%;
+	width: 1078px;
+	height: 140px;
+	background-color: #6A99E9;
+	border-radius: 5px;
 }
 #cuartaseccion article{
-	background-color: blue;
+		display: inline-block;
+}
+#secc04art01{
+	font-size: 0.8em;
+	text-align: justify;
+	margin-top: 35px;
+	width: 450px;
+	height: 103px;
+	margin-left: 40px;
+}
+#secc04art02{
+	font-size: 0.8em;
+	margin-top: 65px;
+	vertical-align: top;
+	width: 300px;
+	height: 103px;
+}
+#secc04art03{
+	vertical-align: top;
+	width: 150px;
+	height: 41px;
+
+}
+#secc04art03 img{
+	margin-right: 5px;
 }
 #feelingsocial{
 	height: : 85px;
 	width: 165px;
 }
 #monos{
-	margin-top: 40px;
+	margin-top: 65px;
 }

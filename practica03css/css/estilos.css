@@ -159,6 +159,7 @@ header nav ul li{
 	border-radius: 5px;
 }
 #S1subArt1Art2Secc2{
+	border: 1px solid gray;
 	border-radius: 15px;
 	width: 236px;
 	height: 35px;
@@ -185,7 +186,7 @@ header nav ul li{
 	margin-top: 28px;
 	margin-left: 5px;
 	width: 302px;
-	height: 283px;
+	height: 250px;
 	border: 1px solid gray;
 	border-radius: 5px;
 }
