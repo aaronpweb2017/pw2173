@@ -1,65 +1,215 @@
  body{
-	font-size: 16px;
+	font-size: 8px;
 	margin: 0 auto;
-	max-width: 1440px;
-	min-width: 1440px;
+	max-width: 938px;
+	min-width: 888px;
+}
+#logoPrincipal img{
+	width: 174px;
+	height: 42px;
+	padding-top: 18px;
 }
 #logoPrincipal{
-	margin-left: 60px;
+	margin-left: 35px;
+}
+#reds img{
+	width: 30px;
+	height: 29px;
 }
 #reds{
-	margin-left: 990px;	
+	margin-left: 580px;
 }
-#fig1, #fig2{
-	margin-right: 5px;
+#r1, #r2{
+	margin-right:10px;
 }
 header nav{
 	background-color: orange;
 	border-color: black;
-	width: 93%;
-	height: 45px;
+	width: 921px;
+	height: 38px;
 	margin: 0 auto;
-	border-radius: 5px; 
+	border-radius: 5px;
+	background: linear-gradient(#FF9933, #FF0000); 
 }
 header nav ul{
-	margin-top: 50px;
+	margin-top: 60px;
 }
 header nav ul li{
-	margin-top: 10px;
-}
-header nav ul li{
+	margin-top: 15px;
 	color: white;
 	display: inline-block;
-	font-size: 1.38em;
-	margin-right: 40px;
+	font-size: 1.7em;
+	margin-right: 15px;
 	font-weight: bold;
 }
 #Secc1 article{
 	display: inline-block;
 }
 #Art1Secc1 img{
-	margin-right:22px;
+	width: 556px;
+	height: 275px; 
 }
 #Art1Secc1{
-	margin-top: 15px;
-	margin-left:110px;
+	margin-top: 12px;
+	margin-left:36px;
+	width: 580px;
+	height: 276px;
 	border-bottom: 1px solid gray;
 }
 #Art2Secc1{
-	vertical-align: top;
-}
-#Art2Secc1 article{
-	display: inline-grid;
-}
-.fondoNaranja{
-	background-color: orange;
-}
-.negritas{
-	font-weight: bold;
-}
-.colorBlanco{
-	color:white;
-}
-.bordeComun{
+	margin-top: 30px;
+	padding-left: 5px;
+	border: 1px solid gray;
 	border-radius: 5px;
+	vertical-align: top;
+	width: 295px;
+	height: 275px;
+}
+#ArtPublicidad,#ArtBuscador,#ArtCaegorias{
+	width: 302px;
+	height: 36px;
+	text-align: center;
+	background: linear-gradient(#FF9933, #FF0000);
+	border-radius: 5px;
+}
+#ArtPublicidad{
+	margin-top:4px;
+	width: 290px;
+}
+#Art2Secc1 img{
+	width: 140px;
+	height: 106px;
+	margin-right:2px;
+}
+#subArt1Art2Secc1{
+	margin-top:8px;
+}
+#subArt2Art2Secc1{
+	margin-top:4px;
+}
+.formatoComun{ 
+	font-weight: bold;
+	color:white;
+	font-size: 2.5em;
+}
+#Secc2 article{
+	display: inline-block;
+}
+#Art1Secc2{
+	display: inline-block;
+	width: 570px;
+	height: 248px;
+	margin-left: 30px;
+}
+#subArt1Art1Secc2{
+	width: 570px;
+	height: 37px;
+	text-align: left;
+	padding-top: 16px;
+}
+#subArt2Art1Secc2{
+	width: 570px;
+	height: 189px;
+}	
+#S1subArt2Art1Secc2{
+	width: 164px;
+	height: 188px;
+}
+#S1subArt2Art1Secc2 img{
+	border: 5px solid #d0d0d0;
+}
+#S2subArt2Art1Secc2{
+	width: 390px;
+	height: 187px;
+	padding-left: 10px;
+	vertical-align: top;
+	font-size: 1.5em; 
+	text-align: justify;
+}
+#S2subArt2Art1Secc2 span{
+	background-color: #F6EFEF;
+	width: 390px
+	height: 34px;
+	padding-left: 10px;
+	border-bottom: 1px solid gray;
+	border-radius: 5px;
+}
+#S2subArt2Art1Secc2 button{
+	font-style: italic;
+	font-weight: bold;
+	border-radius: 5px;
+	background-color: #C0C0C0;
+	color: white;
+	margin-top: 20px;
+}
+#Art2Secc2{
+	vertical-align: top;
+	width: 289px;
+	height: 392px;
+	margin-left: 10px;
+}
+#subArt1Art2Secc2{
+	margin-left: 5px;
+	margin-top: 28px;
+	width: 302px;
+	height: 91px;
+	vertical-align: top;
+	display: inline-flex;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#S1subArt1Art2Secc2{
+	border-radius: 15px;
+	width: 236px;
+	height: 35px;
+	margin-left: 30px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+#S1subArt1Art2Secc2 input{
+	margin-top: 10px;
+	border-radius: 15px;
+	width: 200px;
+	height: 25px;
+}
+#S1subArt1Art2Secc2 button{
+	width: 30px;
+	height: 30px;
+	color: white;
+	font-weight: bold;
+	border-radius: 150px;
+	border-color: black;
+	text-align: center;
+}
+#subArt2Art2Secc2{
+	margin-top: 28px;
+	margin-left: 5px;
+	width: 302px;
+	height: 283px;
+	border: 1px solid gray;
+	border-radius: 5px;
+}
+#subArt2Art2Secc2 ul{
+	list-style: none;
+	width: 180px;
+}
+#subArt2Art2Secc2 ul li:before{
+	content: "• ";
+	color: black;
+}
+#subArt2Art2Secc2 ul li{
+	border-bottom-style: dotted;
+	border-color: gray;
+	font-size: 1.8em;
+	margin-top: 10px;
+}
+.formatoDistinto1{
+	font-size: 3em;
+	font-weight: bold;
+	color: gray;
+}
+.formatoDistinto2{
+	font-size: 1.2em;
+	font-style: italic;
+	color: black;
 }
