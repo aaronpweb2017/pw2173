@@ -24,6 +24,7 @@ form input[type="button"]{
 }
 header{
 	background: #B3D8EB;
+	height: 160px;
 }
 header nav{
 	background: #0E6CB0;
@@ -31,6 +32,11 @@ header nav{
 	margin: 0 auto;
 	padding: 2px 0px 2px 0;
 	width: 99%;
+	height: 30px;
+	margin-top: -25px;
+}
+header nav ul{
+	margin-top: 5px;
 }
 header nav ul li{
 	color: white;
@@ -52,8 +58,10 @@ header nav ul li{
 }
 #logo /*es un id*/
 {
-	margin-top: -1px;
+	vertical-align: top;
+	margin-top: -125px;
 }
+
 .unaSeccion{ /*es una clase. 1em=16px*/ 
 	font-size: 4.5em;
 }
