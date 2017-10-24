@@ -1,0 +1,99 @@
+img[alt]{
+	border: 5px solid blue;
+}
+/*Imagen con atributo SRC cadena exacta*/
+img[src="img/alerta.png"]{
+	width: 400px;
+}
+/*^ = circunflejo*/
+/*Imagen con atributo SRC con el inicio de la cadena*/
+img[src^="img/"]{
+	width: 150px;
+}
+/*Imagen con el atributo SRC al final de la cadena*/
+img[src$="png"]{
+	width: 250px;
+}
+/*Imagen con el atributo SRC en cualquier parte de la cadena*/
+img[src*="mg"]{
+	width: 1000px;
+}
+/*El caracter ~ indica que estos selectores 
+en este article están separados por espacios*/
+article[class~="resaltado"]{
+	border: 1px dashed blue;
+}
+article[class~="archivo"]{
+	border: 1px dashed red;
+}
+article[class~="ingles"]{
+	border: 1px dashed green;
+}
+/*El atributo id es una lista de valores separados
+por guiones */
+article[id|="ingles"]{
+	text-align: center;
+}
+/*
+Selector de secundarios para seleccionar
+solamente el(los) <p> que se encuentran
+inmediatamente despues del <div>
+
+Los elementos que estan contenidos en div*/
+div > p {  /*solo los hijos directos*/
+	color: blue;
+}
+/*Todos los elementos <p> serán seleccionados*/
+div p{
+	color: red;
+}
+/*Seleccionar sólo el elemento <p> que está
+inmediatamente después del elemento <h2>
+hermano adyacente*/
+h2 + p{
+	color: green;
+}
+/*Seleccionar todos los hermanos del tipo
+de elemento especificado
+hermano general*/
+h2 ~ p{
+	color:grey;
+}
+/*poner en color el texto de los section menos el id="referencias"*/
+#resumen,#experimento,#pruebas,#resultados,#conclusiones{
+	color:tomato;
+}
+/*Seleccionar todos menos la que no quiero (en este caso menos referencias)*/
+section:not(#referencias){
+	color:hotpink;
+}
+/*Seleccionar elemento LI pares e impares*/
+/*para impares:*/
+li:nth-child(odd){
+	color:green;
+}
+/*para pares:*/
+li:nth-child(even){
+	color:blue;
+}
+li:nth-child(5){/*quinto elemento*/
+	color:red;
+}
+li:nth-last-child(1){/*últimno elemento hacia arriba*/
+	color: yellow;
+}
+/*primer y el último elemento...*/
+article:first-child{/*nth-child(1)*/
+	color: blue;
+}
+article:last-child{/*last-child: empieza desde el último elemento hasta arriba.*/
+	color: yellow;
+}
+/*primnera línea de unn párrafo*/
+p:first-line{
+	font-weight: bold;
+	text-transform: capitalize; /*primera letra de la línea en mayúscula*/
+}
+/*Tarea: Utilizar los selectores en las primeras dos prácticas.*/
+
+
