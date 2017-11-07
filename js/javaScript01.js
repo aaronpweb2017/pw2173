@@ -7,5 +7,5 @@
 		document.write(nombre);
 		document.write(" tú tienes ");
 		document.write(edad);
-		document.write(" años.");
+		document.write(" años de edad.");
 	}

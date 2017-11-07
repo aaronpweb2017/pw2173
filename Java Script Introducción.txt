@@ -1,0 +1,55 @@
+﻿*JavaScript (JS):
+Es un lenguaje de programación que se integra con HTML para ciertas validaciones y el manejo de eventos.
+
+*Para que sirve este lenguaje???
+-Para el manejo de eventos (interacción del usuario con la página web).
+-No todas las entradas (valores) de los inputs que son válidas (se necesita una restricción).
+-Para realizar alguna acción lógica.
+
+*Características:
+-Surge de LiveScript (menos poderoso que el actual).
+-El punto y coma (;) es opocioanal (se recomienda ponerlo).
+-Se mira el código del lado del cliente.
+-Existe JavaScript del lado del servidor en distintas aplciaciones.
+-No es tipado (no hay que declarar el tipo de datos en las variables).
+-Se puede ver el código de JavaScript de una página web cualquiera en el código fuente de la misma.
+-Su sintaxis está relacionada con la de Java (if, else, while, for, ...) pero no necesariamente igual.
+
+*Dónde podemos ejecutar (escribir código) JavaScript???
+Desde la consola de Google Chrome dando clic derecho sobre la página en cuestión y de ahí en "Inspeccionar" en la sección de Console (Stop).
+
+*Ejemplo usando JS en la consola de Chrome: 
+var a=1 --> (undefined), tecleo: a --> 1.
+var b=2 --> (undefined), tecleo: b --> 2.
+tecleo: a+b --> 3.
+
+*Fnciones es JS:
+¿Qué es una función?: es un conjunto de sentencias (instrucciones) que realizan una tarea específica o calculan un valor.
+Es como si fuera un método en java los cuales pueden regresar algo (NoVoid) o no (Void).
+
+*Ejemplos de funciones:
+function suma(i, j){return i+j;} --> undefined
+Si tecleo: suma (sin los paréntesis y los parámetros) --> f suma(i, j){return i+j;}
+
+function square(number){  return number * number;  }
+
+*Caracterísiticas de las funciones:
+-El nombre de la función guarda la declaración (código de la misma), es decir aparte de una función es una variable.
+-Las funciones que se ejecutan una sola vez (que no tienen nombre) son funciones anónimas que se pueden asignar a una variable.
+
+*Más ejemplos de funciones:
+var suma2=function(k,l){return k+l;} --> se le está asignando a la variable suma2 una función cuyos parámetros son k y l.
+Si tecleo: suma2 (sin los paréntesis y los parámetros). --> f (k, l){return k+l;}
+La variable suma 2 tiene dentro de si misma toda la declaración de la funcion que se le asignó anteriormente.
+Si tecleo: Suma (8,9) --> 17.
+
+*Funciones especiales básicas:
+-Alert: para mandar mensajes al usuario:
+	Ej. 1: alert("Hola JavaScript");
+	Ej. 2: for(var i=1;i<5;i++){alert("Mensaje No."+i+":");}
+-Documnet: Es en sí el padre de todos los objetos y sirve para manipular javascript.
+	document.write("Este texto sistituye todo el contenido de la página");
+-confirm: Para confirmar si se desea realizar una determinada acción (ej: Salir de la página).
+	var confirmacion=confirm("Estás seguro que deseas borrar GIT???");
+-prompt: Para escribir algo (Ej: Tu nombre).
+	var nombre=prompt("Escribe tu nombre: ");
