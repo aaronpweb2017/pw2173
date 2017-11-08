@@ -20,3 +20,14 @@ function numeros(num){
 function operadores(ope){
 	operador=ope;
 }
+function igual(){
+	var valor1=document.calculadora.operando1.value;
+	var valor2=document.calculadora.operando2.value;
+	document.calculadora.resultado.value=eval(valor1+operador+valor2);
+}
+function borrar(){
+	operador=""; 
+	document.calculadora.operando1.value=0;
+	document.calculadora.operando2.value=0;
+	document.calculadora.resultado.value=0;
+}
