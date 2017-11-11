@@ -1,0 +1,95 @@
+body{
+	width: 1423px;
+	height: 777px;
+	font-size: 16px;
+	margin: 0 auto; 
+}
+header{
+	border: 1px solid black;
+	width: 1423px;
+	height: 60px;
+}
+header img{
+	width: 1423px;
+	height: 60px;
+}
+#secc01{
+	width: 1423px;
+	height: 440px;
+	background: rgb(45,46,50);
+	border-radius: 5px;
+}
+#art01secc01{
+	margin-left: 340.5px;
+	margin-top: 50px;
+	width: 742px;
+	height: 137px;
+	color: white;
+	font-size: 1.2em;
+	display: inline-block;
+	text-align: center;
+}
+#subArt01art01secc01{
+	display: inline-flex;
+	/*margin-left: 260px;*/
+	color: rgb(141,141,150);
+	width: 220px;
+	height: 35px;
+	margin-top: 10px;
+}
+#secc02{
+	box-shadow: -5px 5px 5px rgb(207,207,209);
+    margin-top: -200px;
+	border: 1px solid gray;
+	width: 730px;
+	height: 460px;
+	background: white;
+	display: inline-block;
+	margin-left: 346.5px;
+	border-radius: 10px;
+}
+#btnNuevo{
+	width: 68px;
+	height: 40px;
+	border-radius: 5px;
+	opacity: 0.5;
+	float: right;
+}
+#artphoto{
+	box-shadow: 15px 15px 10px rgb(207,207,209);
+	border-radius: 5px;
+	border: 1px solid gray;
+	width: 128px;
+	height: 128px;
+	margin-left: 283.5px;
+	margin-top:10px;
+}
+#artphoto img{
+	width: 128px;
+	height: 128px;
+}
+#name{
+	margin-top:20px;
+}
+#name,#email,#birthday,#address,#phoneNumber,#pass{
+	box-shadow: 5px 5px 2px rgb(207,207,209);
+	margin-left:95px;
+	width: 550px;
+	height: 40px;
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	display: inline-flex;
+}
+#email,#birthday,#address,#phoneNumber,#pass{
+	margin-top: 5px;
+}
+.pageTitle{
+	font-size: 2em;
+	font-family: arial;
+	color: white;
+}
+.followUs{
+	font-size: 0.7em;
+	font-family: arial;
+	color: gray;
+}
