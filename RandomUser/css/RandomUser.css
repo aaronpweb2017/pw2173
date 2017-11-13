@@ -1,3 +1,4 @@
+/*Diseño del Body*/
 body{
 	width: 1423px;
 	height: 777px;
@@ -13,6 +14,7 @@ header img{
 	width: 1423px;
 	height: 60px;
 }
+/*Diseño de la sección 1:*/
 #secc01{
 	width: 1423px;
 	height: 440px;
@@ -37,6 +39,7 @@ header img{
 	height: 35px;
 	margin-top: 10px;
 }
+/*Diseño de la sección 2:*/
 #secc02{
 	box-shadow: -5px 5px 5px rgb(207,207,209);
     margin-top: -200px;
@@ -83,6 +86,7 @@ header img{
 #email,#birthday,#address,#phoneNumber,#pass{
 	margin-top: 5px;
 }
+/*Diseño de clases:*/
 .pageTitle{
 	font-size: 2em;
 	font-family: arial;
