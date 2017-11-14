@@ -15,7 +15,7 @@ function muestraPantallaPrincipal(){
 			protocol: 'file',//tipo de archivo.
 			slashes: true //diagonales normales.
 		}))
-		PantallaPrincipal.show;
+		PantallaPrincipal.show();
 }
 
 app.on('ready', muestraPantallaPrincipal)//enciende la aplicación
