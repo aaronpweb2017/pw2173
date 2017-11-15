@@ -8,10 +8,10 @@ const url=require('url');//Carga una página.
 let PantallaPrincipal;/*let-->inicializa la constante que despues obtendra el valor el cual no cambiara por ser constante.*/
 
 function muestraPantallaPrincipal(){
-		PantallaPrincipal=new BrowserWindow({width:320, height:425});
+		PantallaPrincipal=new BrowserWindow({width:800, height:700});
 		PantallaPrincipal.loadURL(url.format({
 			//join --> concatena cadenas.
-			pathname: path.join(__dirname, 'index.html'),
+			pathname: path.join(__dirname, 'index1.html'),
 			protocol: 'file',//tipo de archivo.
 			slashes: true //diagonales normales.
 		}))

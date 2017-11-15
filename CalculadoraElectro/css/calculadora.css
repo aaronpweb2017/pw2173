@@ -1,0 +1,45 @@
+body{
+	margin: 0 auto;
+	width: 800px;
+	height: 800px;
+	font-size: 16px;
+}
+form table tr td input[type="text"]{
+	border-radius: 5px;
+	border: 1px solid black;
+	width: 440px;
+	height: 65px;
+	font-size: 2em;
+	background: rgb(51,51,51);
+	color: rgb(205,203,203);
+	margin-left: 8px;
+	text-align: right;
+}
+form table tr td input[type="button"]{
+	border-radius: 5px;
+	border: 1px solid black;
+	background: rgb(51,51,51);
+	color: rgb(205,203,203);
+	width: 96px;
+	height: 69px;
+	text-align: center;
+	font-size: 2em;
+	margin-left: 10px;
+}
+form table{
+	box-shadow: 15px 15px 10px gray;
+	border-radius: 8px;
+	border: 1px solid black;
+	margin: 0 auto;
+	width: 483px;
+	height: 563px;
+	background: rgb(31,31,31);
+	padding: 10px 10px 10px 10px; 
+}
+#appTitle{
+	width: 350px;
+	height: 38px;
+	margin: 0 auto;
+	font-style: italic;
+	font-size: 2.5em;
+}
