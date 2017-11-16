@@ -43,3 +43,14 @@ form table{
 	font-style: italic;
 	font-size: 2.5em;
 }
+#btnCientifica{
+	margin-top: 25px;
+	background: orange;
+	color: black;
+	width: 200px;
+	height: 60px;
+	font-size: 1.3em;
+	margin-left: 310px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px gray;
+}

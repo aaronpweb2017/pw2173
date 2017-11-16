@@ -1,3 +1,22 @@
+//Constantes de electron:
+const {BrowserWindow}=require('electron').remote
+const app=require('electron').app
+const path=require('path') //ruta del sistema de archivos.
+const url=require('url') //ruta del URL para cargar la página
+
+//Otra ventana:
+let ventanaCalcCient;
+
+function cacluladoraCientifica(){
+	ventanaCalcCient = new BrowserWindow({width: 500, height: 500});
+	ventanaCalcCient.loadURL(url.format({
+		pathname: path.join(__dirname, 'CalculadoraCientifica.html'),
+		protocol: 'file',
+		slashes: true
+	}))
+	ventanaCalcCient.webContents.openDevTools(); //para ver los errores.
+	ventanaCalcCient.show();
+}
 //variable global (está declarada arriba de todas las funciones y
 //se puede mandar llamar de todas las funciones).
 var operador=""; 
