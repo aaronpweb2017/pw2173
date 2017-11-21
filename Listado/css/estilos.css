@@ -1,0 +1,12 @@
+body{
+	background: blue;
+	font-size: 16px;	
+	max-width: 1024px;
+}
+#lstUsuarios{
+	width: 80%;
+}
+#lstUsuarios li{
+	background: white;
+	color: black;
+}
