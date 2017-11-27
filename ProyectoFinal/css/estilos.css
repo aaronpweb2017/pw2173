@@ -1,0 +1,12 @@
+body{
+	background: blue;
+	font-size: 16px;	
+	max-width: 1024px;
+}
+#lstGrupos{
+	width: 80%;
+}
+#lstGrupos li{
+	background: white;
+	color: black;
+}
