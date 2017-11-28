@@ -3,9 +3,12 @@ const app=require('electron').app;
 const path=require('path'); 
 const url=require('url');
 const $ = require('jquery');
+
 let ventanaGrupos;
+
 var nombreUsuario="";
 var claveUsuario="";
+
 function abreGrupos(){
 	ventanaGrupos = new BrowserWindow({width: 500, height: 500});
 	ventanaGrupos.loadURL(url.format({
@@ -31,7 +34,7 @@ function respuestaInicio(){
 			require('electron').remote.getGlobal('infoLlamadasApi').periodoactual=data.periodoactual;
 			abreGrupos(); return;
 		}
-		alert("Error en el Servidor...");
+		alert("Usuario ó contraseña Incorrectos...");
 	  }
 	});
 }
