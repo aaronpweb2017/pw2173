@@ -4,6 +4,8 @@ const path=require('path');
 const url=require('url');
 const $ = require('jquery');
 let ventanaGrupos;
+var nombreUsuario="";
+var claveUsuario="";
 function abreGrupos(){
 	ventanaGrupos = new BrowserWindow({width: 500, height: 500});
 	ventanaGrupos.loadURL(url.format({
@@ -14,16 +16,22 @@ function abreGrupos(){
 	ventanaGrupos.show();
 }
 function respuestaInicio(){
-	$.ajax({
-	  url: 'http://itculiacan.edu.mx/dadm/apipaselista/data/validausuario.php?usuario=920&clave=12345678',
+	if(document.getElementById("inpUserName").value=="" || document.getElementById("inpUserPass").value=="")
+		return alert("Faltan datos por ingresar...");
+	nombreUsuario=document.getElementById("inpUserName").value;
+	claveUsuario=document.getElementById("inpUserPass").value;
+	$.ajax({	
+	  url: 'http://itculiacan.edu.mx/dadm/apipaselista/data/validausuario.php?usuario='+nombreUsuario+'&clave='+claveUsuario,
 	  dataType: 'json',
 	  success: function(data) {
-	  	$("#artAnswer").html("Respuesta: "+data.respuesta);
-	  	$("#artUsuarioValida").html("Usuario Válida: "+data.usuariovalida);
-	  	$("#artPeriodo").html("Periodo Actual: "+data.periodoactual);
-	 	//document.getElementById("artAnswer").innerHTML = Respuesta: "+data.respuesta;
-	 	//document.getElementById("artUsuarioValida").innerHTML = "Usuario Válida: "+data.usuariovalida;
-	 	//document.getElementById("artPeriodo").innerHTML = "Periodo Actual: "+data.periodoactual;
+	  	$("#artAnswer").html("Respuesta: "+data.respuesta); 
+	  	if(data.respuesta==true){
+			require('electron').remote.getGlobal('infoLlamadasApi').usuario=nombreUsuario;
+			require('electron').remote.getGlobal('infoLlamadasApi').usuariovalida=data.usuariovalida;
+			require('electron').remote.getGlobal('infoLlamadasApi').periodoactual=data.periodoactual;
+			abreGrupos(); return;
+		}
+		alert("Error en el Servidor...");
 	  }
 	});
 }

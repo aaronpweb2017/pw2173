@@ -1,38 +1,56 @@
-const {BrowserWindow}=require('electron').remote
+const {BrowserWindow}=require('electron').remote;
 const app=require('electron').app;
 const path=require('path');
 const url=require('url');
 const $ = require('jquery');
-let PantallaDetalle;
-//clase de objetos tipo persona (de RM):
-function datos(nombreMateria,claveMateria,ClaveGrupo){
-	this.nombreMateria=nombreMateria;
-	this.claveMateria=claveMateria;
-	this.ClaveGrupo=ClaveGrupo;
+let PantallaDeAlumnos;
+
+function datosGrupo(clavemateria,grupo){
+	this.clavemateria=clavemateria;
+	this.grupo=grupo;
 }
-//nombre de la materia, clave de materia y clave de grupo,
-//var gruposs=new Array(3);
+var vectorGrupos=new Array(3);
 function inicia()
 {
+	var nombreUsuario=require('electron').remote.getGlobal('infoLlamadasApi').usuario;
+	var UsuarioValida=require('electron').remote.getGlobal('infoLlamadasApi').usuariovalida;
+	var periodo=require('electron').remote.getGlobal('infoLlamadasApi').periodoactual;
 	$.ajax({
-	  url: 'http://itculiacan.edu.mx/dadm/apipaselista/data/obtienegrupos2.php?usuario=920&usuariovalida=49nc8Eznl4dnU&periodoactual=2173',
+	  url: 'http://itculiacan.edu.mx/dadm/apipaselista/data/obtienegrupos2.php?usuario='
+	  +nombreUsuario+'&usuariovalida='+UsuarioValida+'&periodoactual='+periodo,
 	  dataType: 'json',
 	  success: function(data) {
 	  	var nombreMateria = "";
-	  	var claveMateria="";
-	  	var ClaveGrupo="";
+	  	var clavemateria="";
+	  	var grupo="";
 	  	var resultado="";
-	  	for(var i=1;i<4;i++)
-	  	{
-	  		nombreMateria=data.grupos[i].materia;
-	  		claveMateria = data.grupos[i].clavemateria;
-	  		ClaveGrupo= data.grupos[i].grupo;
-	  		resultado="<li>nombreMateria: "+nombreMateria+"<br> claveMateria: "
-	  		+claveMateria+"<br>ClaveGrupo: "
-	  		+ClaveGrupo+"<button id='"+i+"'>Alumnos</button></li>";
-	  		$("#lstGrupos").append(resultado);
+	  	for(var i=1;i<4;i++){
+	  		//if(data.respuesta==true){
+	  			nombremateria=data.grupos[i].materia;
+	  			clavemateria = data.grupos[i].clavemateria;
+	  			grupo= data.grupos[i].grupo;
+	  			resultado="<li>nombreMateria: "+nombremateria+"<br> clavemateria: "
+	  			+clavemateria+"<br>ClaveGrupo: "
+	  			+grupo+"<button id='"+i+"'>Alumnos</button></li>";
+	  			$("#lstGrupos").append(resultado);
+	  			vectorGrupos[i]=new datosGrupo(clavemateria,grupo);//arreglo de objetos.
+	  		//}
+	  		//else
+	  			//alert("Error al obtener el dato "+i+".");
 	  	}	  	
 	  }
 	});
 }
+function botonAlumnos(){
+	require('electron').remote.getGlobal('infoLlamadasApi').materia=vectorGrupos[this.id].clavemateria;
+	require('electron').remote.getGlobal('infoLlamadasApi').grupo=vectorGrupos[this.id].grupo;
+	PantallaDeAlumnos = new BrowserWindow({width:320,height:425});
+	PantallaDeAlumnos.loadURL(url.format({
+		pathname: path.join(__dirname,'listaAlumnos.html'),
+		protocol: 'file',
+		slashes: true
+	}))
+	PantallaDeAlumnos.show();
+}
+$("body").on("click", "li > button",botonAlumnos);
 inicia();
