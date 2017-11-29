@@ -3,21 +3,19 @@ const app=require('electron').app;
 const path=require('path');
 const url=require('url');
 const $ = require('jquery');
-
+//Variables anteriores para la última llamada a la API:
 var nombreUsuario="";
 var UsuarioValida="";
 var periodo="";
 var Materia="";
 var Grupo=""; 
-
-//Constantes para llamar al PDF:
+//Constantes para llamar al PDF (para mostrar el contenido de listaAlumnos.html):
 const ipc=require('electron').ipcRenderer
 const botonPDF=document.getElementById('btnAlumnosPDF')
 botonPDF.addEventListener('click',function(event){
 	botonPDF.style.display="none" 
 	ipc.send('print-to-pdf')
 })
-
 function datosAlumno(NoControl,nombreCompleto,incidencia){
 	this.NoControl=NoControl;
 	this.nombreCompleto=nombreCompleto;
@@ -59,7 +57,7 @@ function determinaIncidencia(){
 	 require('electron').remote.getGlobal('infoLlamadasApi').incidencia=vectorAlumnos[this.id].incidencia;
 	alert(" No. Control: "+require('electron').remote.getGlobal('infoLlamadasApi').ncontrol
 		+". incidencia: "+require('electron').remote.getGlobal('infoLlamadasApi').incidencia);
-	//Imprime la nueva URL:
+	//Imprime la nueva URL (última llamada):
 	// alert("New URL: http://itculiacan.edu.mx/dadm/apipaselista/data/obtienealumnos2.php?usuario="+nombreUsuario+"&usuariovalida="+UsuarioValida+"&periodoactual="+periodo
 	// 	+"&materia="+Materia+"&grupo="+Grupo
 	// 	+"&ncontrol="+vectorAlumnos[this.id].NoControl+"&incidencia="+vectorAlumnos[this.id].incidencia);

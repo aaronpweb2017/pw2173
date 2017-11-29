@@ -3,10 +3,10 @@ body{
 	font-size: 16px;	
 	max-width: 1024px;
 }
-#lstGrupos{
+#lstGrupos, #lstAlumnos{
 	width: 80%;
 }
-#lstGrupos li{
+#lstGrupos li, #lstAlumnos li{
 	background: white;
 	color: black;
 }
