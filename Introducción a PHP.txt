@@ -1,0 +1,13 @@
+¿¿¿qué es PHP??? Es un lenguaje de programación cuyo código se ejecuta del lado del servidor y
+requiere de un servicio web (apache) y significa procesador de HiperTexto. Para páginas dinámicas (su contenido puede variar). Por si mismo PHP ya es dinamico.
+Más del 50% de las páginas web de internet están echas con PHP a pesar de que este último está echo desde los años 90's.
+No se puede ver el código fuente de una página que use PHP porque se hace la petición inmediatamente y no se puede ver nada (ya que este está del lado del servidor).
+se ejecuta el codigo del lado del servidor y te manda una respuestga al navegador..
+
+Página de Apache (XAMPP): XAMPP --> Apache + MariaDB + PHP + Perl.
+https://www.apachefriends.org/es/index.html
+Apache --> Gestor de servidor web que va permitir ejecutar las páginas.
+
+Escribe: http://localhost/ debe aparecer: https://www.apachefriends.org/es/index.html
+Escribe: http://localhost/phpmyadmin/ y muestra las bases de datos.
+
