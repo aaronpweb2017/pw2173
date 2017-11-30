@@ -1,0 +1,77 @@
+article{
+	background: greenyellow;
+	border: 2px solid black;
+	color: black;
+	margin: 20px 5px;
+	padding: 15px;
+	width: 400px;
+	text-align: center;
+	-moz-transition: all 2s linear;
+	-ms-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	-webkit-transition: all 2s linear;
+}
+article p{
+	font: 30px Tahoma;
+	font-weight: bold;
+	width: 100%;
+}
+
+/*Cambio de estado (esto no es una transformación):*/
+/*article:hover{
+	width: 800px;
+	height: 350px;
+	
+}*/
+
+/*Translate*/
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: translate(420px,300px);
+	-ms-transform: translate(420px,300px);
+	-o-transform: translate(420px,300px);
+	-webkit-transform: translate(420px,300px);
+}*/
+
+/*Rotate*/
+/*article:hover{
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}*/
+
+/*Scale*/
+/*article:hover{
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+}*/
+
+/*Skew*/
+/*article:hover{
+	-moz-transform: skew(10deg,10deg);
+	-ms-transform: skew(10deg,10deg);
+	-o-transform: skew(10deg,10deg);
+	-webkit-transform: skew(10deg,10deg);
+}*/
+
+/*Se pueden poner todas las tranformaciones juntas:*/
+/*article:hover{
+	background: black;
+	color: greenyellow;
+	-moz-transform: translate(420px,300px) rotate(180deg) scale(1.5) skew(10deg,10deg);
+	-ms-transform: translate(420px,300px) rotate(180deg) scale(1.5) skew(10deg,10deg);
+	-o-transform: translate(420px,300px) rotate(180deg) scale(1.5) skew(10deg,10deg);
+	-webkit-transform: translate(420px,300px) rotate(180deg) scale(1.5) skew(10deg,10deg);
+}*/
+
+/*Transformación adicional (Matrix):*/
+/*article:hover{
+	 -moz-transform: matrix(1, 0, 0.5, 1, 150, 0);
+	 -ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+	 -o-transform: matrix(1, 0, 0.5, 1, 150, 0);
+	 -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0);
+}*/
