@@ -1,0 +1,22 @@
+body{
+	background: blue;
+	font-size: 16px;	
+	max-width: 1024px;
+	background: #607D8B;
+}
+#lstGrupos, #lstAlumnos{
+	width: 80%;
+}
+#lstGrupos li, #lstAlumnos li{
+	background: white;
+	color: black;
+}
+#btnGruposPDF, #btnAlumnosPDF{
+	font-family: arial;
+	font-size: 1.5em;
+	background: #263238;
+	border-radius: 5px;
+	text-align: center;
+	color: #ECEFF1;
+	margin-left: 39px;
+}

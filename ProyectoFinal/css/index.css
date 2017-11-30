@@ -1,0 +1,73 @@
+body{
+	margin: 0 auto;
+	font-size: 16px;
+	width: 500px;
+	height: 550px;
+	background: #607D8B;
+	/*border: 1px solid gray;*/
+}
+#artEncab{
+	margin-top: 10px;
+	/*border: 1px solid gray;*/
+	color: #ECEFF1;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: arial;
+	font-style: oblique;
+	text-align: center;
+	text-shadow: 2.5px 2.5px rgb(116,116,116);
+}
+#divSignIn{
+	width: 394px;
+	height: 350px;
+	/*border: 1px solid gray;*/
+	margin-left: 55px;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #455A64;
+	background: #37474F;
+}
+#btnSend{
+	margin-top: 20px;
+	font-family: arial;
+	font-style: oblique;
+	font-size: 2em;
+	width: 125px;
+	margin-left: 128px;
+	background: #263238;
+	border-radius: 5px;
+	text-align: center;
+	color: #ECEFF1;
+}
+div article {
+	/*border: 1px solid gray;*/
+	height:300px;
+}
+div article span{
+	font-size: 2em;
+	margin-left: 30px;
+	color: #ECEFF1;
+	font-style: oblique;
+}
+div article input{
+	width: 332px;
+	height: 46px;
+	border-radius: 5px;
+	font-size: 2em;
+	margin-left: 30px;
+	background: #90A4AE;
+}
+#footer{
+	margin-top: 18px;
+	/*border: 1px solid gray;*/
+	width:250px;
+	margin-left: 60px;
+}
+#headerFooter{
+	font-size: 1.5em;
+	color: #212121;
+}
+.commonTitle{
+	font-size: 1.1em;
+	color: #ECEFF1;
+}
