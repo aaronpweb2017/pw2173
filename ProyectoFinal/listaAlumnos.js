@@ -48,7 +48,7 @@ function iniciaListaAlumnos()
 	  	//Diseño (CSS) de los elementos en tiempo de ejecución:	
 	  	$("#lstAlumnos").css({
 	  		'background':'#37474F',
-	  		'border-radius':'5px',
+	  		'border-radius':'10px',
 	  		'box-shadow': '10px 10px 5px #455A64'
 	  	});
 	  	$("#lstAlumnos > li").css({
@@ -65,7 +65,7 @@ function iniciaListaAlumnos()
 	  		'border-radius':'5px',
 	  		'text-align':'center',
 	  		'color':'#ECEFF1'	
-	  	});	  	  	
+	  	});	 	  	
 	  }
 	});
 }

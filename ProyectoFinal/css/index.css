@@ -8,24 +8,29 @@ body{
 }
 #artEncab{
 	margin-top: 10px;
-	/*border: 1px solid gray;*/
+	/*border: 1px solid black;*/
 	color: #ECEFF1;
 	font-size: 2.5em;
 	font-weight: bold;
 	font-family: arial;
 	font-style: oblique;
 	text-align: center;
-	text-shadow: 2.5px 2.5px rgb(116,116,116);
+	transition: all 0.3s linear;
+	text-shadow: 1px 1px #90A4AE;
+}
+#artEncab:hover{
+	padding: 5px;
+	font-size: 2.7em;
+	color: black;
 }
 #divSignIn{
 	width: 394px;
 	height: 350px;
-	/*border: 1px solid gray;*/
 	margin-left: 55px;
 	margin-top: 20px;
-	border-radius: 5px;
-	box-shadow: 10px 10px 5px #455A64;
+	border-radius: 10px;
 	background: #37474F;
+	box-shadow: 10px 10px 5px #455A64;
 }
 #btnSend{
 	margin-top: 20px;
@@ -38,23 +43,40 @@ body{
 	border-radius: 5px;
 	text-align: center;
 	color: #ECEFF1;
+	transition: all  0.3s linear;
+}
+#btnSend:hover{
+	padding: 5px;
+	color: black;
+    width: 130px;
 }
 div article {
 	/*border: 1px solid gray;*/
-	height:300px;
+	height:320px;
+	display: inline-block;
 }
-div article span{
+div article article{
+	border: 1px solid black;
+	height:100px;
+	width: 348px;
+	border-radius: 10px;
+	margin-left:20px;
+	margin-top:20px;
+	border: 1px solid gray;
+}
+div article article span{
 	font-size: 2em;
-	margin-left: 30px;
+	margin-left:5px;
 	color: #ECEFF1;
 	font-style: oblique;
+	transition: all 0.3s linear;
 }
-div article input{
+div article article input{
 	width: 332px;
 	height: 46px;
 	border-radius: 5px;
 	font-size: 2em;
-	margin-left: 30px;
+	margin-left:5px;
 	background: #90A4AE;
 }
 #footer{

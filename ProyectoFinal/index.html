@@ -12,10 +12,14 @@
 		</header>
 		<div id="divSignIn">
 			<article>
-				<br><span id="spanUserName">Usuario:</span><br>
-				<input id="inpUserName" type="text" placeholder="you@example.com">
-				<br><br><span id="spanUserPass">Contraseña:</span><br>
-				<input id="inpUserPass" type="password">
+				<article>
+					<span id="spanUserName">Usuario:</span><br>
+					<input id="inpUserName" type="text" placeholder="you@example.com" onClick="spnNitoUser()">
+				</article>
+				<article>
+					<span id="spanUserPass">Contraseña:</span><br>
+					<input id="inpUserPass" type="password" onClick="spnNitoPass()">
+				</article>
 				<button id="btnSend" onclick="respuestaInicio()">Enviar</button>	
 			</article>
 		</div>

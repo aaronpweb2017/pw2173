@@ -19,4 +19,10 @@ body{
 	text-align: center;
 	color: #ECEFF1;
 	margin-left: 39px;
+	transition: all  0.2s linear;
+}
+#btnGruposPDF:hover, #btnAlumnosPDF:hover{
+	padding: 10px;
+	color: gray;
+	font-weight: bold;
 }

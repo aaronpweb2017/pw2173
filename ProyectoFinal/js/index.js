@@ -8,6 +8,16 @@ let ventanaGrupos;
 //Variables anteriores para la siguiente llamada a la API:
 var nombreUsuario="";
 var claveUsuario="";
+function spnNitoUser(){
+	$("#spanUserName").css({
+	  	'color': 'black'
+	});
+}
+function spnNitoPass(){
+	$("#spanUserPass").css({
+	  	'color': 'black'
+	  });
+}
 //Muestra la siguiente pantalla (grupos.html):
 function abreGrupos(){
 	ventanaGrupos = new BrowserWindow({width: 500, height: 500});

@@ -37,7 +37,7 @@ function iniciaListaGrupos()
 	  +nombreUsuario+'&usuariovalida='+UsuarioValida+'&periodoactual='+periodo,
 	  dataType: 'json',
 	  success: function(data) {
-	  	//Variables de los grupos a mostrar en la UL lstGrupos: 
+	  	//Variables de los grupos a mostrar en la lstGrupos: 
 	  	var nombreMateria = "";
 	  	var clavemateria="";
 	  	var grupo="";
@@ -58,7 +58,7 @@ function iniciaListaGrupos()
 	  	//Diseño (CSS) de los elementos en tiempo de ejecución:
 	  	$("#lstGrupos").css({
 	  		'background':'#37474F',
-	  		'border-radius':'5px',
+	  		'border-radius':'10px',
 	  		'box-shadow': '10px 10px 5px #455A64'
 	  	});
 	  	$("#lstGrupos > li").css({
