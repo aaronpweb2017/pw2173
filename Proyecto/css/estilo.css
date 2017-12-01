@@ -1,0 +1,60 @@
+body{
+	font-size: 16px;
+	margin: 0 auto;
+	width: 500px;
+	height: 550px;
+	background: #A7FFEB;
+}
+#artEncab{
+	margin-top: 10px;
+	color: #004D40;
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: arial;
+	font-style: oblique;
+	text-align: center;
+}
+#divSignIn{
+	width: 394px;
+	height: 280px;
+	margin-left: 55px;
+	margin-top: 20px;
+	border-radius: 5px;
+	box-shadow: 10px 10px 5px #00796B;
+	background: #00695C;
+}
+#divSignIn article{
+	position: absolute;
+	margin-top: 50px;
+	width: 394px;
+	height:200px;
+}
+#divSignIn article input{
+	width: 332px;
+	height: 46px;
+	border-radius: 5px;
+	font-size: 2em;
+	margin-left: 30px;
+	background: #80CBC4;
+}
+#txtClave{
+	margin-top: 15px;
+}
+#btnEntrar{
+	margin-top: 20px;
+	font-family: arial;
+	font-style: oblique;
+	font-size: 2em;
+	width: 120px;
+	height: 45px;
+	margin-left: 128px;
+	background: #004D40;
+	border-radius: 5px;
+	text-align: center;
+	color: #ECEFF1;
+	transition: width, height 0.3s linear;
+}
+#btnEntrar:hover{
+	width: 130px;
+	height: 55px;
+}

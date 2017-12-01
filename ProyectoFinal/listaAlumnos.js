@@ -70,19 +70,14 @@ function iniciaListaAlumnos()
 	});
 }
 function determinaIncidencia(){
-	 if(this.value=="A") //Asistencia.
+	if(this.value=="A") //Asistencia.
 	 	vectorAlumnos[this.id].incidencia=1;
-	 else //Falta.
+	else //Falta.
 	 	vectorAlumnos[this.id].incidencia=2;
-	 require('electron').remote.getGlobal('infoLlamadasApi').ncontrol=vectorAlumnos[this.id].NoControl;
-	 require('electron').remote.getGlobal('infoLlamadasApi').incidencia=vectorAlumnos[this.id].incidencia;
-	alert(" No. Control: "+require('electron').remote.getGlobal('infoLlamadasApi').ncontrol
-		+". incidencia: "+require('electron').remote.getGlobal('infoLlamadasApi').incidencia);
-	//New URL: http://itculiacan.edu.mx/dadm/apipaselista/data/obtienealumnos2.php?usuario="+nombreUsuario
-	//+"&usuariovalida="+UsuarioValida+"&periodoactual="+periodo
-	//+"&materia="+Materia+"&grupo="+Grupo
-	//+"&ncontrol="+vectorAlumnos[this.id].NoControl+"&incidencia="+vectorAlumnos[this.id].incidencia;
-
+	require('electron').remote.getGlobal('infoLlamadasApi').ncontrol=vectorAlumnos[this.id].NoControl;
+	require('electron').remote.getGlobal('infoLlamadasApi').incidencia=vectorAlumnos[this.id].incidencia;
+	alert("El alumno con No. Control "+require('electron').remote.getGlobal('infoLlamadasApi').ncontrol
+		+" tiene una incidencia="+require('electron').remote.getGlobal('infoLlamadasApi').incidencia);
 }
 $("body").on("click", "li > input",determinaIncidencia);
 iniciaListaAlumnos();
