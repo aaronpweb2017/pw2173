@@ -1,216 +1,230 @@
- body{
-	font-size: 8px;
+/*------------------BODY------------------*/
+body{
 	margin: 0 auto;
-	max-width: 938px;
-	min-width: 888px;
+	font-size: 16px;
+	width: 938px;
+	height: 920px;
+	/*border: 1px solid black;*/
 }
-#logoPrincipal img{
-	width: 174px;
-	height: 42px;
-	padding-top: 18px;
-}
-#logoPrincipal{
-	margin-left: 35px;
-}
-#reds img{
-	width: 30px;
-	height: 29px;
-}
-#reds{
-	margin-left: 580px;
-}
-#r1, #r2{
-	margin-right:10px;
-}
+/*------------------ENCABEZADO------------------*/
 header nav{
-	background-color: orange;
-	border-color: black;
-	width: 921px;
-	height: 38px;
-	margin: 0 auto;
-	border-radius: 5px;
+	/*border: 1px solid black;*/
+	width: 920px;
+	height: 48px;
+	border-radius: 7px;
+	margin-top: 40px;
+	margin-left: 5px;
 	background: linear-gradient(#FF9933, #FF0000); 
 }
 header nav ul{
-	margin-top: 60px;
+	display: inline-flex;
 }
 header nav ul li{
-	margin-top: 15px;
+	list-style: none;
 	color: white;
-	display: inline-block;
-	font-size: 1.7em;
-	margin-right: 15px;
 	font-weight: bold;
+	margin-right: 28px;
 }
-#Secc1 article{
-	display: inline-block;
+#headerLogo{
+	/*border: 1px solid black;*/
+	width: 180px;
+	height: 35px;
 }
-#Art1Secc1 img{
-	width: 556px;
-	height: 275px; 
+#headerLogo img{
+	width: 175px;
+	height: 35px;
+
 }
-#Art1Secc1{
-	margin-top: 12px;
-	margin-left:36px;
-	width: 580px;
-	height: 276px;
-	border-bottom: 1px solid gray;
+#headerReds{
+	/*border: 1px solid black;*/
+	width: 95px;
+	height: 30px;
+	margin-left: 800px;
+	margin-top: -20px;
 }
-#Art2Secc1{
-	margin-top: 30px;
+#headerReds img{
+	width: 28px;
+	height: 28px;
+}
+/*Grupo de secciones*/
+#sectionsGropu{
+	/*border: 1px solid blue;*/
+	display: inline-flex;
+	margin-left: 25px;
+	box-shadow: 5px 5px 15px gray;
 	padding-left: 5px;
-	border: 1px solid gray;
-	border-radius: 5px;
-	vertical-align: top;
-	width: 295px;
-	height: 275px;
+	padding-right: 5px;
 }
-#ArtPublicidad,#ArtBuscador,#ArtCaegorias{
-	width: 302px;
-	height: 36px;
-	text-align: center;
-	background: linear-gradient(#FF9933, #FF0000);
-	border-radius: 5px;
+/*------------------SECCIÓN 01------------------*/
+#secc01{
+	margin-top: 10px;
+	width: 578px;
+	height: 532px;
+	/*border: 1px solid black*/;
 }
-#ArtPublicidad{
-	margin-top:4px;
-	width: 290px;
-}
-#Art2Secc1 img{
-	width: 140px;
-	height: 106px;
-	margin-right:2px;
-}
-#subArt1Art2Secc1{
-	margin-top:8px;
-}
-#subArt2Art2Secc1{
-	margin-top:4px;
-}
-.formatoComun{ 
-	font-weight: bold;
-	color:white;
-	font-size: 2.5em;
-}
-#Secc2 article{
-	display: inline-block;
-}
-#Art1Secc2{
-	display: inline-block;
+#art01secc01{
+	/*border: 1px solid black;*/
 	width: 570px;
-	height: 248px;
-	margin-left: 30px;
-}
-#subArt1Art1Secc2{
-	width: 570px;
-	height: 37px;
-	text-align: left;
-	padding-top: 16px;
-}
-#subArt2Art1Secc2{
-	width: 570px;
-	height: 189px;
-}	
-#S1subArt2Art1Secc2{
-	width: 164px;
-	height: 188px;
-}
-#S1subArt2Art1Secc2 img{
-	border: 5px solid #d0d0d0;
-}
-#S2subArt2Art1Secc2{
-	width: 390px;
-	height: 187px;
-	padding-left: 10px;
-	vertical-align: top;
-	font-size: 1.5em; 
-	text-align: justify;
-}
-#S2subArt2Art1Secc2 span{
-	background-color: #F6EFEF;
-	width: 390px
-	height: 34px;
-	padding-left: 10px;
+	height: 284px;
 	border-bottom: 1px solid gray;
-	border-radius: 5px;
 }
-#S2subArt2Art1Secc2 button{
-	font-style: italic;
+#art01secc01 img{
+	width: 552px;
+	height: 270px;
+}
+#art02secc01{
+	width: 575px;
+	height: 235px;
+	border-bottom: 1px solid gray;
+	margin-top: 18px;
+}
+#spn01Art02secc01{
+	/*border: 1px solid black;*/
+	width: 178px;
+	height: 30px;
+	color: rgb(135,135,135);
+	font-size: 1.8em;
+	font-family: arial;
 	font-weight: bold;
+	margin-top: 15px;
+}
+#subArticulosArt02secc01{
+	display: inline-flex;
+	/*border: 1px solid black;*/
+	width: 567px;
+	height: 190px;
+}
+#subArt01art02secc01{
+	/*border: 1px solid black;*/
+	width: 160px;
+	height: 170px;
+	background: rgb(204,204,204);
+	margin-top: 5px;
+}
+#subArt01art02secc01 img{
+	width: 147px;
+	height: 155px;
+	margin-left: 7px;
+	margin-top: 7px;
+}
+#subArt02art02secc01{
+	/*border: 1px solid black;*/
+	width: 390px;
+	height: 175px;
+	margin-left: 5px;
+	margin-top: 5px;
+}
+#spn02Art02secc01{
+	position: absolute;
 	border-radius: 5px;
-	background-color: #C0C0C0;
+	margin-top: 5px;
+	font-style: oblique;
+	font-size: 0.85em;
+	color: rgb(157,157,157);
+	background: rgb(250,250,250);
+	padding-right: 176px;
+	padding-top:7px; 
+	padding-bottom:7px; 
+	box-shadow: 0px 2px 5px gray;
+}
+#btnsubArt02art02secc01{
+	width: 92px;
+	height: 40px;
+	border-radius: 10px;
+	background: rgb(204,204,204);
 	color: white;
+	font-weight: bold;
+	font-size: 1em;
+	font-style: oblique;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+/*------------------SECCIÓN 02------------------*/
+#secc02{
+	margin-top: 10px;
+	width: 302px;
+	height: 760px;
+	/*border: 1px solid black;*/
+}
+#art01secc02{
+	text-align: center;
+	width: 286px; /*todos miden lo mismo*/
+	height: 300px;
+	border: 1px solid gray;
+	border-radius: 7px;
+}
+#subArt01art01secc02{
+	/*border: 1px solid blue;*/
+	margin-top: 25px;
+}
+#subArt02art01secc02{
+	/*border: 1px solid red;*/
+}
+#subArt01art01secc02, #subArt02art01secc02{
+	width: 280px; 
+	height: 105px;
+	display: inline-flex;
+}
+#subArt01art01secc02 img, #subArt02art01secc02 img{
+	width: 135px; 
+	height: 103px;
+	margin-left: 4px;
+}
+#art02secc02{
+	width: 286px; /*todos miden lo mismo*/
+	height: 120px;
+	border: 1px solid gray;
+	margin-top: 20px;
+	border-radius: 7px;
+	text-align: center;
+}
+#subArt01art02secc02{
+	border: 1px solid gray;
+	width: 240px; 
+	height: 43px;
+	margin-top: 22px;
+	margin-left: 30px;
+	border-radius: 20px;
+}
+#inpSearch{
+	margin-top: 4px;
+	width: 180px; 
+	height: 24px;
+	border-radius: 15px;
+	color: black;
+	margin-left: 5px;
+}
+#btnGo{
+	margin-top: 4px;
+	border-radius: 150px;
+	width: 40px; 
+	height: 35px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+#art03secc02{
+	border-radius: 7px;
+	width: 286px; 
+	height: 282px;
+	border: 1px solid gray;
 	margin-top: 20px;
 }
-#Art2Secc2{
-	vertical-align: top;
-	width: 289px;
-	height: 392px;
-	margin-left: 10px;
-}
-#subArt1Art2Secc2{
-	margin-left: 5px;
-	margin-top: 28px;
-	width: 302px;
-	height: 91px;
-	vertical-align: top;
-	display: inline-flex;
-	border: 1px solid gray;
-	border-radius: 5px;
-}
-#S1subArt1Art2Secc2{
-	border: 1px solid gray;
-	border-radius: 15px;
-	width: 236px;
-	height: 35px;
-	margin-left: 30px;
-	margin-top: 5px;
-	padding-bottom: 5px;
-}
-#S1subArt1Art2Secc2 input{
+#art03secc02 ul li{
+	border-bottom: 0.6px dotted;
 	margin-top: 10px;
-	border-radius: 15px;
-	width: 200px;
-	height: 25px;
+	color: gray;
+	font-weight: bold;
 }
-#S1subArt1Art2Secc2 button{
-	width: 30px;
-	height: 30px;
+.spnCommonTitle{
+	border-radius: 15px;
 	color: white;
 	font-weight: bold;
-	border-radius: 150px;
-	border-color: black;
-	text-align: center;
-}
-#subArt2Art2Secc2{
-	margin-top: 28px;
-	margin-left: 5px;
-	width: 302px;
-	height: 250px;
-	border: 1px solid gray;
-	border-radius: 5px;
-}
-#subArt2Art2Secc2 ul{
-	list-style: none;
-	width: 180px;
-}
-#subArt2Art2Secc2 ul li:before{
-	content: "• ";
-	color: black;
-}
-#subArt2Art2Secc2 ul li{
-	border-bottom-style: dotted;
-	border-color: gray;
-	font-size: 1.8em;
-	margin-top: 10px;
-}
-.formatoDistinto1{
-	font-size: 3em;
-	font-weight: bold;
-	color: gray;
-}
-.formatoDistinto2{
+	font-family: arial;
 	font-size: 1.2em;
-	font-style: italic;
-	color: black;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	padding-left: 94px;
+	padding-right: 93px;
+	margin-top: 15px;
+	background: linear-gradient(#FF9933, #FF0000); 
 }

@@ -2,82 +2,72 @@
 <html lang="es">
 	<head>
 		<meta charset="UTF-8">
-		<title>
-			Práctica 03 CSS3
-		</title>
+		<title>Práctica03(HTML5+CSS3)</title>
 		<link rel="stylesheet" href="css/estilos.css">
 	</head>
 	<body>
 		<header>
-			<artiecle id="logoPrincipal">
-				<img src="img/logo.jpg" alt="">
-			</artiecle>
-			<artiecle id="reds">
-				<img src="img/red1.png" id="r1" alt="">
-				<img src="img/red2.png" id="r2" alt="">
-				<img src="img/red3.png" id="r3" alt="">
-			</artiecle>
+			<article id="headerLogo">
+				<img src="img/logo.jpg" alt="lo que sea...">	
+			</article>
+			<article id="headerReds">
+				<img src="img/red1.png" alt="">
+				<img src="img/red2.png" alt="">
+				<img src="img/red3.png" alt="">
+			</article>
 			<nav>
 				<ul>
 					<li>INICIO</li>
 					<li>TUTORIALES</li>
 					<li>VIDEOS</li>
 					<li>JAVASCRIPT</li>
-					<li>EXHIBITION</li>
-					<li>HTML 5 Y CSS3</li>
+					<li>HTML5 Y CSS3</li>
 					<li>RECURSOS</li>
 					<li>ADMINISTRADOR</li>
 				</ul>
 			</nav>
 		</header>
-		<section id="Secc1">
-			<article id="Art1Secc1">
-				<img src="img/slider.jpg" alt="">
-			</article>
-			<article id="Art2Secc1">
-				<article id="ArtPublicidad">
-					<span class="formatoComun"> Publicidad </span>
+		<section id="sectionsGropu">
+			<section id="secc01">
+				<article id="art01secc01">
+					<img src="img/slider.jpg" alt="">
 				</article>
-				<article id=subArt1Art2Secc1>
-					<img src="img/publicidad.jpg" alt="">
-					<img src="img/publicidad.jpg" alt="">
-				</article>
-				<article id=subArt2Art2Secc1>
-					<img src="img/publicidad.jpg" alt="">
-					<img src="img/publicidad.jpg" alt="">
-				</article>
-			</article>
-		</section>
-		<section id="Secc2">
-			<article id="Art1Secc2">
-				<article id="subArt1Art1Secc2">
-					<span class="formatoDistinto1"> Título del Post</span>
-				</article>
-				<article id="subArt2Art1Secc2">
-					<article id="S1subArt2Art1Secc2">
-						<img src="img/img-post.jpg" alt="">
-					</article>
-					<article id="S2subArt2Art1Secc2">
-						<span class="formatoDistinto2">Por Admin El 30/05/2012. En pruebas.</span><br>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat...
-						<button> Leer más...</button>
+				<article id="art02secc01">
+					<span id="spn01Art02secc01">Título del Post</span>
+					<article id="subArticulosArt02secc01">
+						<article id="subArt01art02secc01">
+							<img src="img/img-post.jpg" alt="">
+						</article>
+						<article id="subArt02art02secc01">
+							<span id="spn02Art02secc01">Por Admin el 30/05/2012. En pruebas.</span><br>
+							<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde fuga consequatur ipsam rem temporibus maiores ad, aliquam numquam molestias soluta non eaque veniam voluptate amet dignissimos, iste architecto eos nisi. 
+							<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+							<button id="btnsubArt02art02secc01">Leer más</button>
+						</article>
 					</article>
 				</article>
-			</article>
-			<article id="Art2Secc2">
-				<article id="subArt1Art2Secc2">
-					<article id="ArtBuscador">
-							<span class="formatoComun"> Buscador </span>
+			</section>
+			<section id="secc02">
+				<article id="art01secc02">
+					<br><span class="spnCommonTitle">Publicidad</span>
+					<article id="subArt01art01secc02">
+						<img src="img/publicidad.jpg" alt="">
+						<img src="img/publicidad.jpg" alt="">
 					</article>
-					<article id="S1subArt1Art2Secc2">
-						<input type="search" placeholder="search">
-						<button> Go </button>
+					<article id="subArt02art01secc02">
+						<img src="img/publicidad.jpg" alt="">
+						<img src="img/publicidad.jpg" alt="">
 					</article>
 				</article>
-				<article id="subArt2Art2Secc2"> 
-					<article id="ArtCaegorias">
-							<span class="formatoComun"> Caegorías </span>
+				<article id="art02secc02">
+					<br><span class="spnCommonTitle">Buscador</span>
+					<article id="subArt01art02secc02">
+						<input id="inpSearch" type="text" placeholder="search">
+						<button id="btnGo">Go</button>
 					</article>
+				</article>
+				<article id="art03secc02">
+					<br><span class="spnCommonTitle">Categorías</span><br><br>
 					<ul>
 						<li>Categoría 1</li>
 						<li>Categoría 2</li>
@@ -88,7 +78,7 @@
 						<li>Categoría 7</li>
 					</ul>
 				</article>
-			</article>
+			</section>
 		</section>
 	</body>
 </html>
