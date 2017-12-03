@@ -1,95 +1,95 @@
+/*------------------BODY------------------*/
 body{
-	margin: 0 auto;
-	font-size: 16px;
-	width: 500px;
-	height: 550px;
+	/*border: 1px solid black;*/
 	background: #607D8B;
-	/*border: 1px solid gray;*/
+	font-size: 16px;
+	height: 550px;
+	margin: 0 auto;
+	width: 500px;
 }
+/*-----ENCABEZADO (TÍTULO DE LA APP):-----*/
 #artEncab{
-	margin-top: 10px;
 	/*border: 1px solid black;*/
 	color: #ECEFF1;
-	font-size: 2.5em;
-	font-weight: bold;
 	font-family: arial;
+	font-size: 2.5em;
 	font-style: oblique;
+	font-weight: bold;
+	margin-top: 10px;
 	text-align: center;
-	transition: all 0.3s linear;
 	text-shadow: 1px 1px #90A4AE;
+	transition: all 0.3s linear;
 }
 #artEncab:hover{
-	padding: 5px;
+	color: black;
 	font-size: 2.7em;
-	color: black;
-}
-#divSignIn{
-	width: 394px;
-	height: 350px;
-	margin-left: 55px;
-	margin-top: 20px;
-	border-radius: 10px;
-	background: #37474F;
-	box-shadow: 10px 10px 5px #455A64;
-}
-#btnSend{
-	margin-top: 20px;
-	font-family: arial;
-	font-style: oblique;
-	font-size: 2em;
-	width: 125px;
-	margin-left: 128px;
-	background: #263238;
-	border-radius: 5px;
-	text-align: center;
-	color: #ECEFF1;
-	transition: all  0.3s linear;
-}
-#btnSend:hover{
 	padding: 5px;
-	color: black;
-    width: 130px;
 }
-div article {
+/*------------CAJA DE DATOS:--------------*/
+#divSignIn{
+	/*border: 1px solid black;*/
+	background: #37474F;
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px #455A64;
+	height: 350px;
+	margin: 20px 0px 0px 55px;
+	width: 394px;
+}
+div article{
 	/*border: 1px solid gray;*/
-	height:320px;
 	display: inline-block;
+	height: 320px;
 }
 div article article{
-	border: 1px solid black;
-	height:100px;
-	width: 348px;
 	border-radius: 10px;
-	margin-left:20px;
-	margin-top:20px;
 	border: 1px solid gray;
+	height: 100px;
+	margin: 20px 0px 0px 20px;
+	width: 348px;
 }
 div article article span{
-	font-size: 2em;
-	margin-left:5px;
 	color: #ECEFF1;
+	font-size: 2em;
 	font-style: oblique;
+	margin-left: 5px;
 	transition: all 0.3s linear;
 }
 div article article input{
-	width: 332px;
-	height: 46px;
-	border-radius: 5px;
-	font-size: 2em;
-	margin-left:5px;
 	background: #90A4AE;
+	border-radius: 10px;
+	font-size: 2em;
+	height: 46px;
+	margin-left: 5px;
+	width: 332px;
 }
+/*---------------BOTÓN ENVIAR:---------------*/
+#btnSend{
+	background: #263238;
+	border-radius: 15px;
+	color: #ECEFF1;
+	font-family: arial;
+	font-size: 2em;
+	font-style: oblique;
+	margin: 20px 0px 0px 128px;
+	transition: all  0.3s linear;
+	width: 125px;
+}
+#btnSend:hover{
+	color: black;
+	padding: 5px;
+    width: 130px;
+}
+/*------------------FOOTER:------------------*/
 #footer{
-	margin-top: 18px;
 	/*border: 1px solid gray;*/
+	margin: 18px 0px 0px 60px;
 	width:250px;
-	margin-left: 60px;
 }
-#headerFooter{
-	font-size: 1.5em;
+#footerTitle{
 	color: #212121;
+	font-size: 1.5em;
 }
 .commonTitle{
-	font-size: 1.1em;
 	color: #ECEFF1;
+	font-size: 1.1em;
 }

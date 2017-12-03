@@ -24,10 +24,9 @@ global.infoLlamadasApi={
 function muestraPantallaPrincipal(){
 		PantallaPrincipal=new BrowserWindow({width:530, height:620});
 		PantallaPrincipal.loadURL(url.format({
-			//join --> concatena cadenas.
 			pathname: path.join(__dirname, 'index.html'),
-			protocol: 'file',//tipo de archivo.
-			slashes: true //diagonales normales.
+			protocol: 'file',
+			slashes: true
 		}))
 		//PantallaPrincipal.webContents.openDevTools();
 		PantallaPrincipal.show();
@@ -47,5 +46,4 @@ ipc.on('print-to-pdf',function(event){
 		})
 	})
 });
-//Enciende la aplicación y muestra la pantalla solicitada:
 app.on('ready', muestraPantallaPrincipal)
