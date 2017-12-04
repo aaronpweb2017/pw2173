@@ -8,12 +8,20 @@ var inicia=function(){
 						"&clave="+clave+
 						"&id="+Math.random();
 		$.ajax({
-			url: 'localhost/pw/php/entrada.php',
-			dataType: 'json',
+			url:"php/entrada.php",
+			dataType: 'json',//Tipo de datos de retorno (lo que queremos obtener)
+			type:"POST", //lo que enviamos
+			data:parametros, //los que se mandan por Host.
 			success:function(data){
-			
+				if(data.respuesta == true){
+					alert("Bienvenido inválido");
+				}
+				else{
+					alert("Usuario o Clave incorrectos.");
+				}
 			},
 			error: function(a,b,c){
+				alert("Error en el servidor...");
 			
 			}
 		});
