@@ -5,7 +5,7 @@
 		$respuesta=false;
 		$usuario=$_POST["usuario"];
 		$clave=md5($_POST["clave"]);
-		$consulta="select ncontrol, clave from alumnos where ncontrol='".$usuario."' and clave='".$clave."' limit 1";
+		$consulta="select ncontrol,clave from alumnos where ncontrol='".$usuario."' and clave='".$clave."' limit 1";
 		$resConsulta=mysqli_query($conexion,$consulta); //jala todos los registros de la consulta.
 		if(mysqli_num_rows($resConsulta) > 0){ //Si al menos traes un renglón está bien...
 			$respuesta=true;
