@@ -10,11 +10,13 @@ var inicia = function(){
 		$.ajax({
 			 url:"php/entrada.php",
 			 dataType: 'json', //Tipo de datos de retorno (lo que se desea obtener).
-			 type: "POST", //lo que enviamos...
 			 data:parametros, //los que se mandan por Host...
+			 type: "POST", //lo que enviamos...
+			 
 			 success:function(data){
 			 	if(data.respuesta == true){
-			 		alert("¡Bienvenido!");
+			 		// alert("¡Bienvenido!"+data.nombre+".");
+			 		$("main").load("menu.html");
 			 	}else{
 			 		alert("Usuario o Clave incorrectos.");
 			 	}
