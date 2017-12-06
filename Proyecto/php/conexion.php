@@ -1,7 +1,6 @@
 <?php
 	function conectaBD(){
-		//recibe la llave que se solicita al servidor.
-		//parámetros: servidor, usuario, contraseña, bd
+		//servidor,usuario,contraseña,base de datos
 		$conexion=mysqli_connect("localhost","root","","pw2173");
 		return $conexion;
 	}
