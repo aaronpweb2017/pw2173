@@ -31,6 +31,34 @@ var iniciaMenu = function(){
 		});
 
 	}
+	var teclaNcontrol=function(tecla){
+		if(tecla.which==13) //13=Enter.
+		{
+
+			var ncontrol=$("#txtNcontrol").val();
+			var parametros="opc=buscaNcontrol"+"&ncontrol="+ncontrol+"&id="+Math.random();
+			$.ajax({
+			 	url:"php/buscancontrol.php",
+			 	dataType: 'json', //retorno
+			 	type: "POST", //lo que enviamos
+			 	data:parametros,
+			 	success:function(data){
+			 		if(data.respuesta == true){
+			 			$("#txtNombre").val=(data.nombre);	
+			 			$("#txtCarrera").val=(data.carrera);	 		
+			 			$("#txtClave").val=(data.clave);
+			 		}else{
+			 			
+			 		}
+			 	},
+			 	error:function(a,b,c){
+			 		alert("No se pudo conectar al server.");
+				}
+			});
+		} 
+	}
+	//keypress --> Evento cuando presionas una tecla...
+	$("#txtNcontrol").on("keypress", teclaNcontrol);
 	$("#btnAlta").on("click",alta);
 	$("#btnAltaAlumno").on("click",altaAlumno);
 }
