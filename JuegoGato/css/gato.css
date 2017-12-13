@@ -1,0 +1,105 @@
+body{
+	font-size: 16px;
+	height: 740px;
+	margin: 0 auto;
+	width: 800px;
+}
+#gameTitle{
+	font-family: arial;
+	font-size: 2em;
+	font-style: oblique;
+	font-weight: bold;
+	text-align: center;
+	width: 800px;
+	color: rgb(82,82,82);
+}
+#secchead{
+	display: inline-flex;
+	width: 539px;
+	height: 60px;
+	font-style: oblique;
+	font-weight: bold;
+	font-size: 1.9em;
+	color: white;
+}
+#winner {
+	margin-top: 8px;
+	height: 40px;
+}
+#opc01, #opc02{
+	width: 50px;
+	height: 45px;
+	font-size: 1em;
+	font-weight: bold;
+	box-shadow: 7px 7px 5px black;
+	border-radius: 3px;
+	margin-top: 5px;
+}
+#iniciaJuego{
+	width: 100px;
+	margin-left: 413px;
+	margin-top: 10px;
+	font-size: 2em;
+	box-shadow:7px 7px 5px black;
+	border-radius: 3px;
+	font-weight: bold;
+}
+#opc01{
+	margin-left: 255px;
+}
+#opc02{
+	margin-left: 5px;
+}
+#gameBoard{
+	background: rgb(60,60,60);
+	border: 1px solid black;
+	display: inline-block;
+	height: 625px;
+	width: 540px;
+	margin-left: 120px; 
+	margin-top: 10px;
+	box-shadow: 15px 15px 10px gray;
+	border-radius: 5px;
+}
+#line1{
+	margin-top: 10px;
+}
+#line1,#line2,#line3{
+	background: white;
+	display: inline-flex;
+	height: 160px;
+	margin-left: 30px;
+	width: 478px;
+	border-bottom: 2px solid rgb(180,180,180);
+	border-radius: 5px;
+}
+#pos11,#pos21,#pos31{
+	margin-left: 50px;
+}
+#pos11,#pos12,#pos13{
+	background: rgb(234,232,233);
+	border-radius: 5px;	
+	font-size: 6em;
+	height: 150px;
+	margin-left: 7px;
+	margin-top: 5px;
+	width: 150px;
+}
+#pos21,#pos22,#pos23{
+	background: rgb(234,232,233);
+	border-radius: 5px;
+	font-size: 6em;
+	height: 150px;
+	margin-left: 7px;
+	margin-top: 5px;
+	width: 150px;
+}
+#pos31,#pos32,#pos33{
+	background: rgb(234,232,233);
+	border-radius: 5px;
+	font-size: 6em;
+	height: 150px;
+	margin-left: 7px;
+	margin-top: 5px;
+	width: 150px;
+}

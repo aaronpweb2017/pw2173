@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Juego Gato</title>
+		<link rel="stylesheet" href="css/gato.css">
+		<script src="js/gato.js"></script>
+	</head>
+	<body>
+		<header>
+			<article id="gameTitle">
+				THE CAT GAME
+			</article>
+		</header>
+		<form action="#" name="gato" id="gameBoard">
+			<section id="secchead">
+				<article id="winner">
+					<span>Ganador:</span>
+				</article>
+				<input type="button" id="opc01" value="X" onClick="setSymbol(this.value)">
+				<input type="button" id="opc02" value="O" onClick="setSymbol(this.value)">
+			</section>
+			<section id="line1">	
+				<input type="button" id="pos11" name="c11" onClick="getSymbol11(), termina()">
+				<input type="button" id="pos12" name="c12" onClick="getSymbol12(), termina()">
+				<input type="button" id="pos13" name="c13" onClick="getSymbol13(), termina()">
+			</section>
+			<section id="line2">
+				<input type="button" id="pos21" name="c21" onClick="getSymbol21(), termina()">
+				<input type="button" id="pos22" name="c22" onClick="getSymbol22(), termina()">
+				<input type="button" id="pos23" name="c23" onClick="getSymbol23(), termina()">
+			</section>
+			<section id="line3">
+				<input type="button" id="pos31" name="c31" onClick="getSymbol31(), termina()">
+				<input type="button" id="pos32" name="c32" onClick="getSymbol32(), termina()">
+				<input type="button" id="pos33" name="c33" onClick="getSymbol33(), termina()">
+			</section>
+			<input type="button" id="iniciaJuego" value="Inicia" onClick="startGame()">
+		</form>
+	</body>
+</html>
